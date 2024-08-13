@@ -122,7 +122,18 @@ Rainfall in Australia exhibits seasonality, as shown in the EDA section. Extract
 
 ## Conclusion
 ## Results
-The best performing model is the  KNN  with an accuracy of approximately 80%. The scores for both the training and testing data were similar, reducing concerns of the model b
+The best performing model is the  KNN  with an accuracy of approximately 80%. The scores for both the training and testing data were similar, reducing concerns of the model being overfit.
 
+## Next Steps
+While this model is a good starting point for rain prediction in Australia, there are several ways in which the model could be improved upon:
+- Further hyperparameter tuning
+- Engineering new features such as trailing amounts of rain or sunshine
+- Collecting additional data from nearby countries (for example, does rain originating in Indonesia or New Zealand have predictive power?)
+- Attempting to predict the *amount* of rainfall
 
+## 🏆 Certificates 
+To verify the certificates, click the images to follow the links.
+
+<p align="middle">
+  <a href="https://coursera.org/share/4f8d8ca5dc64ff2ed8adcbe25c634952"img src="https://github.com/user-attachments/assets/245113e4-fa5e-4116-a1ec-6abcf1b96c42" height="430"></a>
 
