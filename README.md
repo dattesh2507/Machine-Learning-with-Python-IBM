@@ -136,5 +136,6 @@ To verify the certificates, click the images to follow the links.
 
 
 <p align="middle">
-  <a href="https://coursera.org/share/4f8d8ca5dc64ff2ed8adcbe25c634952"img src="https://github.com/user-attachments/assets/245113e4-fa5e-4116-a1ec-6abcf1b96c42" height="430"></a>
+  <a href="https://coursera.org/share/4f8d8ca5dc64ff2ed8adcbe25c634952"img src=
+    "https://github.com/user-attachments/assets/245113e4-fa5e-4116-a1ec-6abcf1b96c42" height="430"></a>
 
