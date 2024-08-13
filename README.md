@@ -107,5 +107,22 @@ According to the author of the Kaggle dataset and the ["Notes to accompany Daily
 #### Histograms
 ![Histograms of data columns](https://github.com/user-attachments/assets/0c549a17-c6a0-4119-84f8-053e0c995081)
 
+## Data Preprocessing
+### Missing Values
+The primary preprocessing need for this dataset is handling the missing values. Given the strong correlations between certain features, using a multivariate feature imputation method makes sense. While still experimental, the `IterativeImputer` module from `sklearn` is perfect for this use case and appears stable enough. This module...
+> "...models each feature with missing values as a function of other features, and uses that estimate for imputation. It does so in an iterated round-robin fashion: at each step, a feature column is designated as output y and the other feature columns are treated as inputs X. A regressor is fit on (X, y) for known y. Then, the regressor is used to predict the missing values of y. This is done for each feature in an iterative fashion, and then is repeated for max_iter imputation rounds. The results of the final imputation round are returned."
+
+Source: [6.4.3. Multivariate feature imputation](https://scikit-learn.org/stable/modules/impute.html#iterative-imputer)
+
+The `IterativeImputer` was applied to all continuous features while categorical features were imputed via `np.random.choice()` with the unique values weighted by their respective probability distributions. 
+
+
+### Extracting the Month
+Rainfall in Australia exhibits seasonality, as shown in the EDA section. Extracting the month value from the `Date` column is a much more useful feature than the full date itself.
+
+## Conclusion
+## Results
+The best performing model is the  KNN  with an accuracy of approximately 80%. The scores for both the training and testing data were similar, reducing concerns of the model b
+
 
 
